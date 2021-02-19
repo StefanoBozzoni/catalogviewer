@@ -17,7 +17,6 @@ import com.vjapp.catalogviewer.domain.model.SearchTypes
 import com.vjapp.catalogviewer.presentation.MainViewModel
 import com.vjapp.catalogviewer.presentation.Resource
 import com.vjapp.catalogviewer.presentation.ResourceState
-import kotlinx.android.synthetic.main.activity_tests_list.*
 import kotlinx.android.synthetic.main.activity_tests_list.rv_catalog_list
 import kotlinx.android.synthetic.main.activity_tests_list.vf_catalog
 import kotlinx.android.synthetic.main.fragment_catalog_search.*
@@ -126,6 +125,7 @@ class CatalogSearchFragment : Fragment(),
             else {
                 endlessRecyclerViewScrollListener.resetState()
                 catalogAdapter.updateData(newCatalog.catalogList)
+                rv_catalog_list.scrollToPosition(0)
             }
         }
     }
