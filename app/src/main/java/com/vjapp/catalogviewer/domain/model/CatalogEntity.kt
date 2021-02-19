@@ -7,5 +7,6 @@ data class CatalogEntity(
 data class CatalogItemEntity(
     val brandName: String,
     val category: String,
-    val price: String
+    val price: String,
+    val cod10:String
 )

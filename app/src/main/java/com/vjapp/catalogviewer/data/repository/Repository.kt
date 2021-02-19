@@ -16,8 +16,8 @@ class Repository(
         return remoteDataSource.httpBinDemo()
     }
 
-    override suspend fun getCatalog(): CatalogEntity {
-        return ServiceMapper.mapToEntity(remoteDataSource.getCatalog())
+    override suspend fun getCatalog(orderType : String): CatalogEntity {
+        return ServiceMapper.mapToEntity(remoteDataSource.getCatalog(orderType))
     }
 
     override suspend fun getProduct(): ProductEntity {

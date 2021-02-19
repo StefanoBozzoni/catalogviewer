@@ -14,8 +14,8 @@ class RemoteDataSource(
         return result.body().toString()
     }
 
-    suspend fun getCatalog(): CatalogResponse {
-        val response = appService.getCatalogList()
+    suspend fun getCatalog(orderType: String): CatalogResponse {
+        val response = appService.getCatalogList(orderType)
         if (response.isSuccessful) {
             response.body()?.let { return it }
         }

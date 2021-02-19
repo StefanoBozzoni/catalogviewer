@@ -24,6 +24,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+            <ProgressBar
+                    android:id="@+id/endlessProgressBar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+
             <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_catalog_list"
                     android:layout_width="match_parent"

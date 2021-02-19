@@ -22,7 +22,7 @@ android {
     }
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.vjapp.writest"
+        applicationId "com.vjapp.catalogviewer"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -81,12 +81,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.3'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.3'
-
-    //implementation "androidx.room:room-runtime:${libVersions.room}"
-    //api "androidx.room:room-ktx:${libVersions.room}"
-    //kapt "androidx.room:room-compiler:${libVersions.room}"
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     //Stetho
-    debugImplementation "com.facebook.stetho:stetho:${libVersions.stetho}"
+    //debugImplementation "com.facebook.stetho:stetho:${libVersions.stetho}"
 
 }

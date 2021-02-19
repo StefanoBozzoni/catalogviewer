@@ -3,7 +3,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         package="com.vjapp.catalogviewer">
 
-    <uses-permission android:name="anddroid.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
             android:name=".CatalogViewerApplication"

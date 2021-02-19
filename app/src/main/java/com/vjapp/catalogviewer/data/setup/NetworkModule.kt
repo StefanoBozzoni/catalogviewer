@@ -11,10 +11,4 @@ object NetworkModule {
         return loggingInterceptor
     }
 
-    fun createHeadersInterceptor() = Interceptor {
-        val request = it.request().newBuilder()
-            .addHeader("Content-Type", "application/x-www-form-urlencoded")
-            .build()
-        it.proceed(request)
-    }
 }

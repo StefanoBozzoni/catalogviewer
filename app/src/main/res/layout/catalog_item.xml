@@ -14,13 +14,15 @@
             android:padding="@dimen/small_padding">
 
         <ImageView
+                android:id="@+id/ivProduct"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/tvCategory"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="immagine del prodotto" />
 
         <TextView
                 android:id="@+id/tvCategory"
@@ -30,7 +32,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="gg/mm/yyyy XKSIEHKEII" />
+                tools:text="categoria" />
 
 
         <TextView
@@ -43,7 +45,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/tvCategory"
-                tools:text="FG-121231231212312312312312312313123131231231-16 sdf sf sdf sd" />
+                tools:text="brand" />
 
         <TextView
                 android:id="@+id/tvPrice"

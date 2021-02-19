@@ -22,7 +22,8 @@ class ServiceMapper {
                 category = catalogItemResponse.microCategory,
                 price = if (catalogItemResponse.formattedDiscountedPrice == catalogItemResponse.formattedFullPrice)
                     catalogItemResponse.formattedFullPrice
-                else catalogItemResponse.formattedDiscountedPrice
+                else catalogItemResponse.formattedDiscountedPrice,
+                cod10 = catalogItemResponse.cod10
             )
         }
 
@@ -73,6 +74,17 @@ class ServiceMapper {
                     defaultSizeLabel,
                     alternativeSizeLabel
                 )
+            }
+        }
+
+        fun mapOrderType(orderType:SearchTypes): String {
+            return when (orderType) {
+                SearchTypes.SEARCHRESULT -> "searchresult"
+                SearchTypes.LATEST -> "latest"
+                SearchTypes.LOWEST -> "lowest"
+                SearchTypes.HIGHEST -> "highest"
+                SearchTypes.SEARCHRESULT2 -> "searchresult2"
+                SearchTypes.SEARCHRESULT3 -> "searchresult3"
             }
         }
 
